@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.astu.bustransportsystem.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="750.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-213.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/bus-mid.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="362.0" layoutY="44.0" prefHeight="413.0" prefWidth="357.0" style="-fx-background-color: #000a; -fx-background-radius: 6px;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="325.0" style="-fx-font-size: 34px; -fx-font-weight: 800;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Lato Black" size="43.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="98.0" prefWidth="317.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="340.0" text="SSN">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="ssnField" prefHeight="37.0" prefWidth="315.0" style="-fx-background-color: #ddd3;" />
+                  <Label fx:id="ssnError" prefHeight="18.0" prefWidth="318.0" styleClass="danger" textFill="#ff4a4a">
+                     <font>
+                        <Font name="Lato Semibold Italic" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="98.0" prefWidth="325.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="340.0" text="Password">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordField" prefHeight="37.0" prefWidth="315.0" style="-fx-background-color: #ddd2;" />
+                  <Label fx:id="passwordError" prefHeight="18.0" prefWidth="318.0" styleClass="danger" textFill="#ff4a4a">
+                     <font>
+                        <Font name="Lato Medium Italic" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="358.0" style="-fx-font-weight: bold;" styleClass="accent" text="LOGIN">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@Stylesheets/primer-dark.css" />
+      <URL value="@Stylesheets/font.css" />
+   </stylesheets>
+</AnchorPane>
